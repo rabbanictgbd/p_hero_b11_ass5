@@ -17,9 +17,15 @@ document.getElementById("btn-1").addEventListener("click", function(event){
     event.target.style.backgroundColor= "gray" 
      const history= document.getElementById("history")
      const p= document.createElement("p")
-     const historyText= "you completed one task"
+     const newDate= new Date()
+     const date= newDate.toLocaleTimeString()
+     const historyText= "you completed one task at " + date; 
+     
      p.innerText= historyText
      history.appendChild(p)
+     if(taskValue.innerText==0){
+        alert("you have completed all the tasks!!")
+    } 
 })
 document.getElementById("btn-2").addEventListener("click", function(event){
     
@@ -34,9 +40,15 @@ document.getElementById("btn-2").addEventListener("click", function(event){
     event.target.style.backgroundColor= "gray" 
      const history= document.getElementById("history")
      const p= document.createElement("p")
-     const historyText= "you completed one task"
+     const newDate= new Date()
+     const date= newDate.toLocaleTimeString()
+     const historyText= "you completed one task at " + date; 
+     
      p.innerText= historyText
      history.appendChild(p)
+     if(taskValue.innerText==0){
+        alert("you have completed all the tasks!!")
+    } 
 })
 document.getElementById("btn-3").addEventListener("click", function(event){
     
@@ -51,9 +63,15 @@ document.getElementById("btn-3").addEventListener("click", function(event){
     event.target.style.backgroundColor= "gray" 
      const history= document.getElementById("history")
      const p= document.createElement("p")
-     const historyText= "you completed one task"
+     const newDate= new Date()
+     const date= newDate.toLocaleTimeString()
+     const historyText= "you completed one task at " + date; 
      p.innerText= historyText
-     history.appendChild(p)  
+     
+     history.appendChild(p) 
+     if(taskValue.innerText==0){
+        alert("you have completed all the tasks!!")
+    }  
 })
 document.getElementById("btn-4").addEventListener("click", function(event){
     
@@ -68,9 +86,15 @@ document.getElementById("btn-4").addEventListener("click", function(event){
     event.target.style.backgroundColor= "gray" 
      const history= document.getElementById("history")
      const p= document.createElement("p")
-     const historyText= "you completed one task"
+     const newDate= new Date()
+     const date= newDate.toLocaleTimeString()
+     const historyText= "you completed one task at " + date; 
      p.innerText= historyText
+    
      history.appendChild(p)
+     if(taskValue.innerText==0){
+        alert("you have completed all the tasks!!")
+    } 
 })
 document.getElementById("btn-5").addEventListener("click", function(event){
     
@@ -85,9 +109,15 @@ document.getElementById("btn-5").addEventListener("click", function(event){
     event.target.style.backgroundColor= "gray" 
      const history= document.getElementById("history")
      const p= document.createElement("p")
-     const historyText= "you completed one task"
+     const newDate= new Date()
+     const date= newDate.toLocaleTimeString()
+     const historyText= "you completed one task at " + date; 
      p.innerText= historyText
+     
      history.appendChild(p) 
+     if(taskValue.innerText==0){
+        alert("you have completed all the tasks!!")
+    } 
 })
 document.getElementById("btn-6").addEventListener("click", function(event){
     
@@ -102,9 +132,14 @@ document.getElementById("btn-6").addEventListener("click", function(event){
     event.target.style.backgroundColor= "gray" 
      const history= document.getElementById("history")
      const p= document.createElement("p")
-     const historyText= "you completed one task", date();
+     const newDate= new Date()
+     const date= newDate.toLocaleTimeString()
+     const historyText= "you completed one task at " + date; 
      p.innerText= historyText
      history.appendChild(p)
+     if(taskValue.innerText==0){
+        alert("you have completed all the tasks!!")
+    } 
 });
 
 document.getElementById("discover").addEventListener("click", function(){
@@ -117,9 +152,6 @@ document.getElementById("btn-clean").addEventListener("click", function(){
     history.innerText= " "
     
 })
-let taskValue= document.getElementById("task-value")
-if(taskValue.innerText==0){
-    alert("you have completed all the tasks!!")
-} alert("not com")
 
-console.log(taskValue.innerText)
+
+
